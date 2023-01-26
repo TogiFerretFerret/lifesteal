@@ -26,15 +26,6 @@ if [ ! -d "eaglercraftx" ]; then
   FORCE1="bruh"
 fi
 
-# ~~~
-# BY MODIFYING THE BELOW TEXT, YOU ARE BEING A PRICK
-# ~~~
-if ! grep -q "^eula=$REPL_OWNER/$REPL_SLUG\$" "eula.txt"; then
-  rm eula.txt
-  java -jar LicensePrompt.jar
-  echo "eula=$REPL_OWNER/$REPL_SLUG" > eula.txt
-fi
-# ~~~
 
 # reset stuff
 if [ -f "base.repl" ] && ! { [ "$REPL_OWNER" == "ayunami2000" ] && [ "$REPL_SLUG" == "eaglercraftx" ]; }; then
